@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kampung Wai, Perlis</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <a href="webmaster.html" class="brand">
+                <img src="kampungwai.logo.png" alt="Logo" class="logo"> </a>
+            <div class="menu-btn"></div>
+            <div class="navigation">
+                <div class="navigation-items">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="history.html">History</a>
+                    <a href="culture.html">Culture</a>
+                    <a href="attraction.html">Attraction</a>
+                    <a href="event.html">Event</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
+            </div>
+        </header>
+
+        <section class="home">
+            <video class="video-slide active" src="videohome1.mp4" autoplay muted loop></video>
+            <video class="video-slide" src="videohome2.mp4" autoplay muted loop></video>
+            <video class="video-slide" src="videohome3.mp4" autoplay muted loop></video>
+            <video class="video-slide" src="videohome4.mp4" autoplay muted loop></video>
+            <video class="video-slide" src="videohome5.mp4" autoplay muted loop></video>
+
+            <div class="content active">
+                <h1>Kampung Wai ,<br> <span>Perlis</span></h1>
+                <p>Nestled in the northern part of Malaysia, Kampung Wai in Perlis is a serene and picturesque village that captivates the essence of traditional Malay life. Kampung Wai is a place where the pace of life slows down, allowing you to immerse yourself in the tranquil beauty of nature. The gentle rustling of the leaves and the melodic songs of the birds provide a soothing soundtrack to the everyday life of the villagers.</p>
+                <a href="about.html">Read More</a>
+            </div>
+            <div class="content">
+                <h1>Historic<br> <span>Wonders</span></h1>
+                <p>Kampung Wai, Perlis is a village steeped in history and cultural richness, offering a glimpse into Malaysia's storied past. This historic wonder captivates visitors with its traditional wooden houses, lush paddy fields, and vibrant festivals. Here, the rhythms of daily life echo the customs and traditions passed down through generations, creating a living tapestry of heritage and natural beauty.</p>
+                <a href="history.html">Read More</a>
+            </div>
+            <div class="content">
+                <h1>Earth's<br> <span>Treasures</span></h1>
+                <p>Kampung Wai has a rich tapestry woven with the threads of tradition, culture, and the natural world, truly embodying the essence of Earth’s treasures. This charming village in Perlis is not just a place on the map but a living testament to the harmony between humanity and nature that has flourished for generations </p>
+                <a href="culture.html">Read More</a>
+            </div>
+            <div class="content">
+                <h1>Kayak<br> <span>Expedition</span></h1>
+                <p>Embark on a breathtaking kayak expedition in Kampung Wai, where the tranquil waters and lush landscapes create an idyllic backdrop for an unforgettable adventure. As you dip your paddle into the calm, clear river, the gentle ripples spread out in perfect harmony, mirroring the serene environment that surrounds you.</p>
+                <a href="attraction.html">Read More</a>
+            </div>
+            <div class="content">
+                <h1>Adventure<br> <span>Awaits</span></h1>
+                <p>Adventure beckons in the enchanting village of Kampung Wai, where every corner holds the promise of new discoveries and exhilarating experiences. This hidden gem in Perlis is a paradise for those seeking a blend of natural beauty, cultural immersion, and outdoor thrills. The air is filled with the earthy scent of fresh crops, and the sight of farmers tending to their fields provides a glimpse into the timeless rhythms of rural life. </p>
+                <a href="event.html">Read More</a>
+            </div>
+
+            <div class="media-icons">
+                <a href="https://web.facebook.com/?_rdc=1&_rdr"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+            </div>
+
+            <div class="slider-navigation">
+                <div class="nav-btn active"></div>
+                <div class="nav-btn"></div>
+                <div class="nav-btn"></div>
+                <div class="nav-btn"></div>
+                <div class="nav-btn"></div>
+            </div>
+        </section>
+
+        <script type="text/javascript">
+        // Javascript of Responsive Navigation Menu
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+
+        //Javascript for video slider navigation
+        const btns = document.querySelectorAll(".nav-btn");
+        const slides = document.querySelectorAll(".video-slide");
+        const contents = document.querySelectorAll(".content");
+
+        var sliderNav = function(manual) {
+            btns.forEach((btn) => {
+                btn.classList.remove("active");
+            });
+
+            slides.forEach((slide) => {
+                slide.classList.remove("active");
+            });
+
+            contents.forEach((content) => {
+                content.classList.remove("active");
+            });
+
+            btns[manual].classList.add("active");
+            slides[manual].classList.add("active");
+            contents[manual].classList.add("active");
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                sliderNav(i);
+            });
+        });
+        </script>
+
+        <footer style="background-color: #333; color: #fff; text-align: center; padding: 20px;">
+            <p>&copy; 2024 Kampung Wai, Perlis. All rights reserved. Recommended browser: Chrome. Resolution: 1920x1080 Last update: July 2024.</p>
+        </footer>
+
+    </body>
+</html>
