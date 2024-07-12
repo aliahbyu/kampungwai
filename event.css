@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    transition: 0.5s ease;
+    background-color: #001f3f;
+}
+
+header .navigation {
+    position: relative;
+    display: flex;
+}
+
+header .navigation .navigation-items a {
+    position: relative;
+    color: #ffffff;
+    font-size: 1.2em;
+    margin: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:before {
+    content: '';
+    position: absolute;
+    background: #ffffff;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:hover::before {
+   width:100%;
+}
+
+.carousel-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 50px; 
+    background-color: #001f3f;
+}
+
+.carousel {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-images {
+    display: flex;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.content-section {
+    display: flex;
+    padding: 50px;
+    background-color: #ffffff; 
+}
+
+.sidebar {
+    width: 250px;
+    margin-right: 50px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000000; 
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, box-shadow 0.3s; 
+}
+
+.sidebar ul li a img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #85a8dc; 
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.5); 
+}
+
+.content-box {
+    margin-bottom: 50px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.content-box h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.content-box p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.content-inner {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.full-width-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.back-to-top {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #001f3f; 
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.image-item {
+    flex: 1 1 calc(33.333% - 10px);
+    text-align: center;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.video-link a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF4136; /* Red */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.video-link a:hover {
+    background-color: #FF851B; /* Orange */
+}
+
+
+.center-align {
+    text-align: center;
+}
+
+.back-to-top,
+.video-link a {
+    display: inline-block;
+    margin: 20px 0; /* Adjust margin as needed */
+}
+
+.video-link {
+    margin-top: 20px; /* Add margin to space the button from other content */
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.registration-form label {
+    font-weight: bold;
+}
+
+.registration-form input,
+.registration-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.registration-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.registration-form button:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #1e163b; /* White */
+    display: flex;
+    align-items: center;
+}
+
+ul li a i {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.title-section {
+    text-align: center;
+    margin-top: 120px; /* Adjust this value to move it below the header */
+    background-color: #001f3f;
+}
+
+.title-section h1 {
+    font-size: 2.5em; /* Adjust font size as needed */
+    color: #ffffff; /* Dark Blue */
+}
