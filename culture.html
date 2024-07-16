@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Kampung Wai culture, local community, traditional clothing, festivals, cuisine">
+    <meta name="description" content="Explore the rich culture of Kampung Wai, including traditional clothing, festivals, cuisine, and more.">
+    <title>Kampung Wai, Perlis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="culture.css">
+</head>
+<body>
+    <header>
+        <br><br><br><br>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="history.html">History</a>
+                <a href="culture.html">Culture</a>
+                <a href="attraction.html">Attraction</a>
+                <a href="event.html">Event</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+        </div>
+
+    </header>
+    <section class="hero">
+        <h1>CULTURE OF KAMPUNG WAI</h1>
+        <p>Discover the rich cultural heritage of Kampung Wai,<br>
+             where traditions are preserved and celebrated.</p>
+        <a href="#traditional-clothing">Learn More</a>
+    </section>
+
+    <section class="section" id="traditional-clothing">
+        <h2>Traditional Clothing</h2>
+        <div class="images-container">
+            <div class="image-with-details">
+                <h3>Baju Kebaya Perlis</h3>
+                <img src="bajuperlis.jpg" alt="Traditional Clothing 1">
+                <button class="details-btn" onclick="toggleDetails('clothing-details1')">Details</button>
+                <div id="clothing-details1" class="details">
+                    <p>The traditional clothing of Kampung Wai is a reflection of its rich cultural heritage. Baju Kebaya Perlis, a traditional dress famous in Malaysia and Indonesia, originates from the Malay and Peranakan cultures and is prominent in Kampung Wai. It is known as an elegant women's dress and is often worn during official events and festivals in the village.</p>
+                </div>
+            </div>
+            <div class="image-with-details">
+                <h3>Baju Kedah</h3>
+                <img src="bajukedah.jpg" alt="Traditional Clothing 2">
+                <button class="details-btn" onclick="toggleDetails('clothing-details2')">Details</button>
+                <div id="clothing-details2" class="details">
+                    <p>In Kampung Wai, the Baju Kedah is a simple, loose-fitting blouse with short sleeves, made from lightweight fabrics. It comes in various colors and patterns, from simple to vibrant. Worn daily for comfort, it is also used in weddings and cultural events, reflecting the community's heritage. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="food">
+        <h2>Famous Food</h2>
+        <div class="images-container">
+            <div class="image-with-details">
+                <h3>Mangga Harum Manis</h3>
+                <img src="manggaharummanis.jpg" alt="Famous Food 1">
+                <button class="details-btn" onclick="toggleDetails('food-details1')">Details</button>
+                <div id="food-details1" class="details">
+                    <p>Harum Manis mangoes from Kampung Wai are renowned for their fragrant aroma and sweet taste. They are typically available during a specific season, usually around April to June. The Harum Manis mango from Kampung Wai is highly prized in Malaysia and is often considered one of the best mango varieties due to its unique flavor and texture.</p>
+                </div>
+            </div>
+            <div class="image-with-details">
+                <h3>Pulut Mempelam</h3>
+                <img src="pulutmempelam2.jpg" alt="Famous Food 2">
+                <button class="details-btn" onclick="toggleDetails('food-details2')">Details</button>
+                <div id="food-details2" class="details">
+                    <p>Pulut mempelam is a beloved local dessert in Kampung Wai, a village known for its rich cultural heritage and traditional cuisine. In Kampung Wai, pulut mempelam is typically prepared using locally grown Harum Manis mangoes, which are renowned for their exceptional sweetness and fragrance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="cuisine">
+        <h2>Local Cuisine</h2>
+        <div class="images-container">
+            <div class="image-with-details">
+                <h3>Emping</h3>
+                <img src="ping.jpg" alt="Local Cuisine 1">
+                <button class="details-btn" onclick="toggleDetails('cuisine-details1')">Details</button>
+                <div id="cuisine-details1" class="details">
+                    <p>Experience the unique flavors of Kampung Wai through its traditional dishes. Emping is a traditional snack made from melinjo seeds (Gnetum gnemon), pounded and fried to perfection. It comes in four delightful varieties: salty Emping, sweet Emping, spicy Emping, and bitter Emping. Often enjoyed as a popular snack in Kampung Wai, Emping offers a range of tastes and textures that cater to different palates and occasions.</p>
+                </div>
+            </div>
+            <div class="image-with-details">
+                <h3>Laksa Utara</h3>
+                <img src="lak.jpeg" alt="Local Cuisine 2">
+                <button class="details-btn" onclick="toggleDetails('cuisine-details2')">Details</button>
+                <div id="cuisine-details2" class="details">
+                    <p>North Laksa or known as Laksa Kedah is a type of noodle dish that has a unique variation of North Laksa and is famous in the north of Malaysia, especially in the states of Kedah and Perlis including Kampung Wai. This dish is often enjoyed during special events, feasts or as an everyday dish that reflects the uniqueness of the local taste.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-image" src="" alt="Lightbox Image">
+    </div>
+
+    <footer style="background-color: #333; color: #fff; text-align: center; padding: 20px;">
+        <p>&copy; 2024 Kampung Wai, Perlis. All rights reserved. Recommended browser: Chrome. Resolution: 1920x1080 Last update: July 2024.</p>
+    </footer>
+
+    <script src="culture.js"></script>
+
+</body>
+</html>
